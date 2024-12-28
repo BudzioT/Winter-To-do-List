@@ -1,0 +1,100 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("assets/background.jpg");
+    text-align: center;
+}
+
+.additional {
+    display: inline-block;
+    padding: 5px;
+    font-style: italic;
+    border: lightblue solid 2px;
+    margin: 10px 0;
+}
+
+h1 {
+    color: aquamarine;
+    text-shadow: aqua 2px 2px;
+}
+
+.tasks {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    font-family: "Bodoni MT Condensed", sans-serif;
+    font-size: x-large;
+    text-decoration: underline skyblue 3px;
+
+    text-align: left;
+    margin: 20px auto;
+}
+
+#good {
+    display: none;
+}
+
+.strikethrough {
+    text-decoration: line-through aqua;
+}
+
+button {
+    background-color: skyblue;
+    border-radius: 2rem;
+    border-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+input {
+    background-color: lightskyblue;
+    color: white;
+    border-color: aquamarine;
+    border-radius: 1rem;
+}
+
+@keyframes snowfall {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.snowflake {
+    position: absolute;
+    top: -2em;
+
+    animation: snowfall 10s linear infinite;
+    left: calc(100% * var(--random-x));
+    animation-delay: calc(5s * var(--random-delay));
+    animation-duration: calc(5s + 5s * vaR(--random-duration));
+
+    color: white;
+    font-size: 2em;
+}
+
+::-webkit-scrollbar-track {
+    background: lightcyan;
+}
+
+
+::-webkit-scrollbar {
+    background: lightcyan;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: skyblue;
+}

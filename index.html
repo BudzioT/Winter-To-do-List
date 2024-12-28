@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Winter to-do list</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1>Winter to-do list site</h1>
+    <h3>Okay, so here's the catch: I have no idea what to do and I have never done to-do list... so... here it is!</h3>
+    <h4 class="additional">*Pain of writing plain CSS/HTML begins now. React - it's your fault I have so many problems with it...</h4>
+
+    <h2>What do you need to do during winter break?</h2>
+    <p class="additional">Why can't I add an onclick in the sample place as button, help pls</p><br />
+
+    <h3 style="margin-bottom: 10px">Add a new task using this nice button</h3>
+    <label for="task-name">Task's content:</label>
+    <input type="text" id="task-name"/>
+    <button id="add-task">Add task</button> <br />
+
+    <i class="additional">Where are components</i> <br />
+    <div class="tasks" id="tasks">
+        <div>
+            <input type="checkbox" id="task1" />
+            <label for="task1">Prepare for the new year!</label>
+        </div>
+        <div>
+            <input type="checkbox" id="task2" />
+            <label for="task2">Finish all home assignments</label>
+        </div>
+        <div>
+            <input type="checkbox" id="task3" />
+            <label for="task3">Grind High Seas a little</label>
+        </div>
+        <div>
+            <input type="checkbox" id="task4" />
+            <label for="task4">Complete at least 2 YSWS events</label>
+        </div>
+    </div>
+    <br />
+
+    <p class="additional">Tailwind CSS - you aren't innocent too...</p>
+
+    <div style="display: flex; flex-direction: column;">
+        <h2 id="bad">Complete all your tasks, otherwise Santa won't come the next year to you</h2>
+        <h2 id="good">Congratulations! You are now on the list of good kids</h2>
+        <h3 class="additional">Thanks for going through all of my pain of writing this ; p</h3><br />
+        <p class="additional">To all developers using plain CSS/HTML even with vanilla JS - I'm really amazed, keep up the good work!</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
